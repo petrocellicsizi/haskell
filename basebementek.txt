@@ -1,0 +1,11 @@
+hitlist [((0,1), defaultWalnut),((4,4), defaultWalnut)] [((0,1), coneHead),((4,4), vaulting),((4,4), vaulting)]
+movelist [((0,2), Vaulting 7 1),((0,1), coneHead),((0,2), Vaulting 7 2)]
+checkisIn [((0,1), defaultWalnut)] [((0,1), coneHead),((1,1), coneHead),((0,1), vaulting)]
+canGoForwardlist [((0,1), defaultWalnut),((4,4), defaultWalnut)] [((0,1), coneHead),((4,5), Vaulting 7 1),((4,4), Vaulting 7 1)]	
+action 1 [((0,1), defaultWalnut),((4,4), defaultWalnut)]
+performZombieActions (GameModel 0 [((0,1),defaultWalnut)] [((0,1),vaulting)])==Just (GameModel 0 [((0,1),defaultWalnut)] [((0,0),Vaulting 7 1)])
+performZombieActions (GameModel 0 [((0,1), defaultWalnut),((2,2), defaultWalnut)] [((0,1), coneHead),((0,2), coneHead),((2,3), vaulting)])
+performZombieActions (GameModel 0 [((0,1), defaultWalnut),((2,2), defaultWalnut)] [((0,1), coneHead),((0,1), coneHead),((2,3), vaulting)])
+performZombieActions (GameModel 0 [((0,1), defaultWalnut)] [((0,1), vaulting)]) ==Just (GameModel 0 [((0,1), defaultWalnut)] [((0,0), Vaulting 7 1)])
+[((0,0), vaulting),((0,1), vaulting)]
+performZombieActions (GameModel 0 [((4,2),Sunflower 5)] [((0,1), defaultWalnut)])
